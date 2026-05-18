@@ -12,21 +12,21 @@
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            font-family: 'Times New Roman', Times, serif;
             line-height: 1.6;
-            color: #333;
-            background: #f9e0b0;
+            color: #3b2f23;
+            background: #f4ecd8;
         }
 
         .container {
             max-width: 900px;
             margin: 0 auto;
-            background: rgb(233, 199, 126);
-            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            background: #efe1c6;
+            box-shadow: 0 8px 30px rgba(59,47,35,0.08);
         }
 
         header {
-            background: linear-gradient(135deg, #2c5282 0%, #1a365d 100%);
+            background: linear-gradient(135deg, #7a4a22 0%, #4b2b0d 100%);
             color: white;
             padding: 3rem 2rem;
             text-align: center;
@@ -73,15 +73,15 @@
         }
 
         h2 {
-            color: #8b601fef;
-            border-bottom: 3px solid #2c5282;
+            color: #6b4423;
+            border-bottom: 3px solid #6b4423;
             padding-bottom: 0.5rem;
             margin-bottom: 1.5rem;
             font-size: 1.8rem;
         }
 
         .summary-text {
-            color: #444;
+            color: #4a3d31;
             font-size: 1.05rem;
             line-height: 1.7;
         }
@@ -102,11 +102,11 @@
         .item-title {
             font-weight: 600;
             font-size: 1.25rem;
-            color: #512f00;
+            color: #52321a;
         }
 
         .item-subtitle {
-            color: #c86a1e;
+            color: #8a4c20;
             font-size: 1.05rem;
             margin-bottom: 0.5rem;
         }
@@ -118,7 +118,7 @@
         }
 
         .company-description {
-            color: #666;
+            color: #6b4a2b;
             font-style: italic;
             font-size: 0.95rem;
             margin-bottom: 0.7rem;
@@ -146,7 +146,7 @@
         }
 
         .skill-category h3 {
-            color: #896729;
+            color: #7a5536;
             margin-bottom: 0.7rem;
             font-size: 1.15rem;
             font-weight: 600;
@@ -158,7 +158,7 @@
 
         .skill-category li {
             padding: 0.4rem 0;
-            color: #6f5c33;
+            color: #5b472e;
             font-size: 0.98rem;
         }
 
@@ -322,18 +322,22 @@
 
             <section id="projects">
                 <h2>Projects</h2>
+                
                 <div class="project-item">
                     <div class="item-header">
                         <div>
                             <div class="item-title">Meridian Journal App</div>
-                            <div class="item-subtitle">Full stack application storing personal reflections and insights with built in emotional intelligence using </div>
-                            <div class="item-header">Key details</div>
-                            <ul>
-                                <li>Built using React, Node.js, supabase, and deployed on Vercel</li>
-                                <li>configured with Claude API to process user inputs and determine emotional tone</li>
-                                <li>Built using Claude Code, focusing on building out features from scratch to learn CSS and react</li>
-                            </ul>
+                            <div class="item-subtitle">Full-stack journaling app — React, Node.js, Supabase</div>
                         </div>
+                        <div class="item-date">Personal project • 2024</div>
+                    </div>
+                    <div class="company-description">A privacy-focused journaling application that analyzes emotional tone using Claude to surface reflective insights.</div>
+                    <div class="item-description">
+                        <ul>
+                            <li>Built using React, Node.js, and Supabase; deployed on Vercel</li>
+                            <li>Integrates Claude API to determine emotional tone and summarize entries</li>
+                            <li>Emphasizes accessibility, responsive design, and minimal-data retention</li>
+                        </ul>
                     </div>
                 </div>
             </section>
