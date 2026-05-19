@@ -335,9 +335,16 @@ body.dark-mode .contact-info a {
     }
 
     .theme-button {
-        position: relative;
-        margin: 0 auto 1.5rem auto;
+        position: static;       
         display: block;
+        margin: 0 auto 2rem auto;
+        width: fit-content;
+        font-size: 0.9rem;
+        padding: 0.5rem 1.2rem;
+    }
+    
+    .profile-photo {
+        margin-top: 1rem;
     }
 
     section {
@@ -346,14 +353,19 @@ body.dark-mode .contact-info a {
 }
 
 /* Photos */
-.profile-pic {
-    width: 150px;
-    /* Forces the width to exactly 150 pixels */
-    height: 150px;
-    /* Forces the height to match */
-    object-fit: cover;
-    /* Prevents the image from stretching or squeezing */
+.profile-photo {
+    width: 175px;
+    height: 175px;
     border-radius: 50%;
-    /* Turns a perfect square image into a circle! */
-    border: 3px solid #0f3574;
+    object-fit: cover;
+    border: 3px solid #ffffff;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+/* Fun interactive hover state */
+.profile-photo:hover {
+    transform: scale(1.05);
+    border-color: #ffffff;
 }
