@@ -4,260 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Graeme Cubitt</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Times New Roman', Times, serif;
-            line-height: 1.6;
-            color: #3b2f23;
-            background: #f4ecd8;
-        }
-
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            background: #efe1c6;
-            box-shadow: 0 8px 30px rgba(59,47,35,0.08);
-        }
-
-        header {
-            background: linear-gradient(135deg, #7a4a22 0%, #4b2b0d 100%);
-            color: white;
-            padding: 3rem 2rem;
-            text-align: center;
-        }
-
-        h1 {
-            font-size: 2.8rem;
-            margin-bottom: 0.5rem;
-            font-weight: 700;
-        }
-
-        .tagline {
-            font-size: 1.15rem;
-            opacity: 0.95;
-            margin-bottom: 1.5rem;
-            font-weight: 300;
-        }
-
-        .contact-info {
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-            flex-wrap: wrap;
-            font-size: 0.95rem;
-        }
-
-        .contact-info a {
-            color: white;
-            text-decoration: none;
-            transition: opacity 0.3s;
-        }
-
-        .contact-info a:hover {
-            opacity: 0.8;
-            text-decoration: underline;
-        }
-
-        .content {
-            padding: 2.5rem 2.5rem 3rem 2.5rem;
-        }
-
-        section {
-            margin-bottom: 3rem;
-        }
-
-        h2 {
-            color: #6b4423;
-            border-bottom: 3px solid #6b4423;
-            padding-bottom: 0.5rem;
-            margin-bottom: 1.5rem;
-            font-size: 1.8rem;
-        }
-
-        .summary-text {
-            color: #4a3d31;
-            font-size: 1.05rem;
-            line-height: 1.7;
-        }
-
-        .experience-item, .education-item {
-            margin-bottom: 2.5rem;
-        }
-
-        .item-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
-            margin-bottom: 0.3rem;
-            flex-wrap: wrap;
-            gap: 0.5rem;
-        }
-
-        .item-title {
-            font-weight: 600;
-            font-size: 1.25rem;
-            color: #52321a;
-        }
-
-        .item-subtitle {
-            color: #8a4c20;
-            font-size: 1.05rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .item-date {
-            color: #718096;
-            font-size: 0.95rem;
-            font-weight: 500;
-        }
-
-        .company-description {
-            color: #6b4a2b;
-            font-style: italic;
-            font-size: 0.95rem;
-            margin-bottom: 0.7rem;
-        }
-
-        .item-description {
-            color: #4a5568;
-            margin-top: 0.5rem;
-        }
-
-        .item-description ul {
-            margin-left: 1.5rem;
-            margin-top: 0.5rem;
-        }
-
-        .item-description li {
-            margin-bottom: 0.5rem;
-            line-height: 1.6;
-        }
-
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-        }
-
-        .skill-category h3 {
-            color: #7a5536;
-            margin-bottom: 0.7rem;
-            font-size: 1.15rem;
-            font-weight: 600;
-        }
-
-        .skill-category ul {
-            list-style: none;
-        }
-
-        .skill-category li {
-            padding: 0.4rem 0;
-            color: #5b472e;
-            font-size: 0.98rem;
-        }
-
-        .skill-category li:before {
-            content: "▹ ";
-            color: #825d2c;
-            font-weight: bold;
-            margin-right: 0.3rem;
-        }
-
-        .education-details {
-            color: #947435;
-            margin-top: 0.7rem;
-        }
-
-        .education-details strong {
-            color: #6e561d;
-            display: block;
-            margin-bottom: 0.5rem;
-        }
-
-        .education-details ul {
-            margin-left: 1.5rem;
-            margin-top: 0.3rem;
-        }
-
-        .education-details li {
-            margin-bottom: 0.3rem;
-        }
-
-        /* Mobile Responsive */
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 2.2rem;
-            }
-
-            .tagline {
-                font-size: 1rem;
-            }
-
-            .contact-info {
-                flex-direction: column;
-                gap: 0.5rem;
-            }
-
-            .content {
-                padding: 1.5rem;
-            }
-
-            .item-header {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-
-            .item-date {
-                margin-top: 0.2rem;
-            }
-
-            .skills-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        @media print {
-            body {
-                background: white;
-            }
-            .container {
-                box-shadow: none;
-                max-width: 100%;
-            }
-            header {
-                background: #896729;
-                print-color-adjust: exact;
-                -webkit-print-color-adjust: exact;
-            }
-            section {
-                page-break-inside: avoid;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="container">
         <header>
             <h1>Graeme Cubitt</h1>
             <p class="tagline">Electrical Engineering Student | Embedded Systems | Test Automation</p>
+            
             <div class="contact-info">
                 <a href="mailto:graemecubitt@gmail.com">📧 graemecubitt@gmail.com</a>
                 <a href="tel:+13432022142">📱 343-202-2142</a>
                 <a href="https://linkedin.com/in/graemecubitt" target="_blank">💼 LinkedIn</a>
             </div>
+             <button id="theme-toggle" class="theme-button"> Dark Mode</button>
         </header>
 
         <div class="content">
             <section id="summary">
                 <h2>Summary</h2>
                 <p class="summary-text">
-                    Electrical engineering student at the University of Victoria with experience in embedded systems, test automation, and CI/CD integration. Motivated to solve technical challenges across hardware, software, and infrastructure—with a particular interest in applications to human health and biomedical systems.
+                    Electrical engineering student at the University of Victoria with experience in embedded systems, test automation, and CI/CD integration. Motivated to solve technical challenges across hardware, software, and infrastructure with a particular interest in applications to human health and biomedical systems.
                 </p>
             </section>
 
@@ -400,5 +168,30 @@
             </section>
         </div>
     </div>
+    
+    <script>
+    const toggle = document.getElementById('theme-toggle');
+    const body = document.body;
+    
+    // Check if user previously chose dark mode
+    if (localStorage.getItem('theme') === 'dark') {
+        body.classList.add('dark-mode');
+        toggle.textContent = '☀️ Light Mode';
+    }
+    
+    // When button is clicked
+    toggle.addEventListener('click', function() {
+        body.classList.toggle('dark-mode');
+        
+        // Update button text
+        if (body.classList.contains('dark-mode')) {
+            toggle.textContent = '☀️ Light Mode';
+            localStorage.setItem('theme', 'dark');
+        } else {
+            toggle.textContent = '🌙 Dark Mode';
+            localStorage.setItem('theme', 'light');
+        }
+    });
+</script>
 </body>
 </html>
