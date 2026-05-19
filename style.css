@@ -335,7 +335,7 @@ body.dark-mode .contact-info a {
     }
 
     .theme-button {
-        position: static;
+        position: relative;
         margin: 0 auto 1.5rem auto;
         display: block;
     }
