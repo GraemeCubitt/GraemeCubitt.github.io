@@ -345,7 +345,7 @@ body.dark-mode .ribbon-links a.download-btn:hover {
 .ribbon-links a:hover,
 .ribbon-links a.active {
     background: rgba(15, 53, 116, 0.08);
-    color: #0f3574;
+    color: #397be4;
     font-weight: 600;
 }
 
@@ -430,6 +430,7 @@ body.dark-mode .contact-info a {
         border-right: none;
         border-bottom: 1.5px solid #e2e8f0;
     }
+
     .ribbon-links {
         flex-direction: row;
         justify-content: center;
@@ -437,7 +438,7 @@ body.dark-mode .contact-info a {
         gap: 1rem;
     }
 
-    .ribbon-links a{
+    .ribbon-links a {
         padding: 0.4rem 0.8rem;
         font-size: 0.95rem;
     }
@@ -456,6 +457,35 @@ body.dark-mode .contact-info a {
         z-index: 10;
     }
 
+    .about-split-container {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 15px;
+        width: 100%;
+        margin-top: 1.5rem;
+    }
+
+    .about-image-wrapper {
+        flex: 0 0 30%;
+        max-width: 160px;
+    }
+
+    .about-side-photo {
+        width: 100%;
+        height: auto;
+    }
+
+    .about-text-wrapper {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+
+    .about-text-wrapper .summary-text {
+        font-size: 0.95rem;
+    }
 }
 
 @media print {
