@@ -310,25 +310,20 @@ body.dark-mode .skill-category li:before {
 
 body.dark-mode .nav-ribbon {
     background-color: #0b1528;
-    /* Deep dark navy blue */
 
-    /* This creates the thin vertical white strip separating the ribbon and content columns */
     border-right: 1.5px solid rgba(255, 255, 255, 0.85);
 }
 
 /* 2. Style the navigation links inside the dark navy ribbon */
 body.dark-mode .ribbon-links a {
     color: #cbd5e1;
-    /* Soft white/gray text for readability */
 }
 
 /* 3. Highlight states when hovering or when a page is active */
 body.dark-mode .ribbon-links a:hover,
 body.dark-mode .ribbon-links a.active {
     background: rgba(255, 255, 255, 0.1);
-    /* Subtle white glow background */
     color: #ffffff;
-    /* Pure white text */
 }
 
 body.dark-mode .ribbon-links a.download-btn {
@@ -349,7 +344,6 @@ body.dark-mode .ribbon-links a.download-btn:hover {
     font-weight: 600;
 }
 
-/* Make the download button look like a distinct CTA chip */
 .ribbon-links a.download-btn {
     margin-top: 1rem;
     background: #0f3574;
@@ -381,7 +375,6 @@ body.dark-mode .contact-info a {
     transition: transform 0.3s ease-out, border-color 0.3s ease-out;
 }
 
-/* Fun interactive hover state */
 .about-side-photo:hover {
     transform: scale(1.10);
     border-color: #ffffff;
@@ -413,8 +406,6 @@ body.dark-mode .contact-info a {
     flex-direction: column;
     gap: 1.2rem;
 }
-
-
 
 /* Mobile Responsive */
 @media screen and (max-width: 768px) {
@@ -454,7 +445,11 @@ body.dark-mode .contact-info a {
         top: auto;
         z-index: 1000;
 
-        background: #0f3574;       
+        /* Forces iOS Safari to drop default button styles, do not remove */
+        appearance: none;
+        -webkit-appearance: none;
+
+        background: #0f3574;
         color: white;
         padding: 0.75rem 1.2rem;
         font-size: 0.9rem;
@@ -465,8 +460,9 @@ body.dark-mode .contact-info a {
 
     body.dark-mode .theme-button {
         background: #ffffff;
-        color: #0b1528;            /* Inverts text scheme perfectly for dark view readability */
+        color: #0b1528;
     }
+
     .about-split-container {
         display: flex;
         flex-direction: row;
