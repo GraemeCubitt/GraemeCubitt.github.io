@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me | Graeme Cubitt</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <button id="theme-toggle" class="theme-button">🌙 Dark Mode</button>
+            <img src="images/profile_photo.jpg" alt="Graeme Cubitt Portrait" class="profile-photo">
+            <h1>Graeme Cubitt</h1>
+            <p class="tagline">Electrical Engineering Student | Embedded Systems | Test Automation</p>
+
+            <div class="contact-info">
+                <a href="mailto:graemecubitt@gmail.com">📧 graemecubitt@gmail.com</a>
+                <a href="tel:+13432022142">📱 343-202-2142</a>
+                <a href="https://linkedin.com/in/graemecubitt" target="_blank">💼 LinkedIn</a>
+            </div>
+        </header>
+
+        <div class="main-layout">
+
+            <aside class="nav-ribbon">
+                <nav class="ribbon-links">
+                    <a href="index.html">📄 Resume</a>
+                    <a href="about.html" class="active">🧠 About Me</a>
+                    <a href="assets/my_resume.pdf" download class="download-btn">📥 Download PDF</a>
+                </nav>
+            </aside>
+
+            <main class="content">
+                <section id="about-profile">
+                    <h2>About Me</h2>
+
+                    <div class="about-split-container">
+                        <div class="about-image-wrapper">
+                            <img src="images/backpacking_selfie.jpg" alt="Graeme Cubitt Portrait"
+                                class="about-side-photo">
+                        </div>
+                        <div class="about-text-wrapper">
+                            <p class="summary-text">
+                                I'm an Electrical Engineering student at UVic focused on electrical and software
+                                systems, machine learning, and all things system engineering. I've worked on firmware
+                                development and hardware validation for biosensing systems at Noze, and most recently
+                                built a Hardware-in-the-Loop testing infrastructure at Dometic Marine. Outside of work,
+                                I love to be outside exploring new places, whether that's skiing in the mountains or
+                                backpacking through Southeast Asia.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="about-split-container">
+                        <div class="about-image-wrapper">
+                            <img src="images/ski_smile.jpg" alt="Graeme Cubitt backpacking travel"
+                                class="about-side-photo">
+                        </div>
+                        <div class="about-text-wrapper">
+                            <p class="summary-text">
+                                After graduating high school early at 17, I was deeply inspired by the adventurous,
+                                boundary-pushing lifestyles I saw online. Craving that kind of challenge, I packed up
+                                and moved out to Whistler on my own to live independently, immerse myself in the
+                                mountains, and build a life centered around active exploration.
+                            </p>
+                            <p class="summary-text">
+                                That leap set off a transformative period where I spent a year living independently
+                                across five countries, including Indonesia, Turkey, and Vietnam. Learning to navigate
+                                unfamiliar environments and cultures entirely on my own completely reshaped how I think
+                                about problem-solving, resilience, and building technology that operates seamlessly
+                                across diverse global contexts.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="about-split-container">
+                        <div class="about-image-wrapper">
+                            <img src="images/view_shot.jpg" alt="Mountain landscape view" class="about-side-photo">
+                        </div>
+                        <div class="about-text-wrapper">
+                            <p class="summary-text">
+                                A core ethos I try to live by is connection—to people, to nature, and to the work I do.
+                                I believe that the best technology is built by engineering teams who care deeply about
+                                the constraints they're navigating and the individuals they're solving them for. We are
+                                inherently social creatures, and the most impactful, high-integrity work happens when we
+                                are profoundly connected to the real-world impact of our systems.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="about-split-container">
+                        <div class="about-image-wrapper">
+                            <img src="images/brother_in_san_fran.jpg" alt="Mountain landscape view"
+                                class="about-side-photo">
+                        </div>
+                        <div class="about-text-wrapper">
+                            <p class="summary-text">
+                                Now, I aim to bring that same spirit of connection and adventure into my engineering
+                                work. I aspire to work with likeminded people and connect with the real-world impact of
+                                the systems I build, whether that's through embedded software, machine learning, or
+                                hardware design. I'm excited to continue growing as an engineer and a person, and to see
+                                where this journey takes me next.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+    <script>
+        const toggle = document.getElementById('theme-toggle');
+        const body = document.body;
+
+        // Instantly catch state from localStorage so page loads in correct mode
+        if (localStorage.getItem('theme') === 'dark') {
+            body.classList.add('dark-mode');
+            toggle.textContent = '☀️ Light Mode';
+        }
+
+        toggle.addEventListener('click', function () {
+            body.classList.toggle('dark-mode');
+            if (body.classList.contains('dark-mode')) {
+                toggle.textContent = '☀️ Light Mode';
+                localStorage.setItem('theme', 'dark');
+            } else {
+                toggle.textContent = '🌙 Dark Mode';
+                localStorage.setItem('theme', 'light');
+            }
+        });
+    </script>
+</body>
+
+</html>
